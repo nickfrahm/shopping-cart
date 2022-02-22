@@ -1,0 +1,41 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    background-color: #dadada;
+}
+
+.Nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    height: 80px;
+}
+
+.CartIcon {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 25px;
+    right: 30px;
+}
+
+.mainSection {
+    align-self: center;
+}
+
+.Home {
+    width: 80%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Button {
+    border-radius: 5px;
+    width: 150px;
+    line-height: 2;
+    text-align: center;
+    background-color: dodgerblue;
+}
