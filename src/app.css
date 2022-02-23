@@ -14,6 +14,7 @@
 
 .CartIcon {
     position: absolute;
+    color: black;
     font-size: 1.8rem;
     top: 25px;
     right: 30px;
@@ -21,11 +22,15 @@
 
 .mainSection {
     align-self: center;
+    min-height: calc(100vh - 80px);
+}
+
+.link {
+    text-decoration: none;
 }
 
 .Home {
     width: 80%;
-    height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,4 +43,49 @@
     line-height: 2;
     text-align: center;
     background-color: dodgerblue;
+    color: #fff;
+}
+
+.AddButton {
+    background-color: green;
+    width: 65px;
+    cursor: pointer;
+}
+
+.DeleteButton {
+    background-color: rgb(189, 67, 45);
+    width: 65px;
+    cursor: pointer;
+}
+
+.Shop {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+}
+
+.Card {
+    width: 25vw;
+    min-width: 250px;
+    min-height: 35vh;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardImg {
+    display: block;
+    width: 50%;
+    height: 150px;
+}
+
+.cartButtons {
+    display: flex;
+    justify-content: space-evenly;
 }

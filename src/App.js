@@ -8,8 +8,8 @@ import Shop from './components/Shop';
 function App() {
   return (
     <div className='App'>
-      <Nav />
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/Shop' element={<Shop />} />
