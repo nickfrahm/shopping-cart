@@ -2,9 +2,9 @@ const TableRow = (props) => {
   const { name, qty, price } = props;
   return (
     <tr>
-      <td>{name}</td>
-      <td>{qty}</td>
-      <td>{price}</td>
+      <td className='cartItem'>{name}</td>
+      <td className='cartItem'>{qty}</td>
+      <td className='cartItem'>${price}</td>
     </tr>
   );
 };

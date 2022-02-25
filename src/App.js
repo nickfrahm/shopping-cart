@@ -10,6 +10,7 @@ import Products from './components/util/ProductDetails';
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [total, setTotal] = useState(0);
 
   function incrementQty(e) {
     setProducts(updateItem(e.target.id, 'inc'));
@@ -48,6 +49,14 @@ function App() {
     setCart(newCart);
   }, [products]);
 
+  useEffect(() => {
+    let newTotal = 0;
+    cart.forEach((item) => {
+      newTotal += item.qty * item.price;
+    });
+    setTotal(newTotal);
+  }, [cart]);
+
   return (
     <div className='App'>
       <BrowserRouter>
@@ -64,7 +73,7 @@ function App() {
               />
             }
           />
-          <Route path='/Cart' element={<Cart cart={cart} />} />
+          <Route path='/Cart' element={<Cart cart={cart} total={total} />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,7 +2,7 @@ import TableRow from './util/TableRow';
 import uniqid from 'uniqid';
 
 const Cart = (props) => {
-  const { cart } = props;
+  const { cart, total } = props;
 
   return (
     <div className='Cart mainSection'>
@@ -10,9 +10,9 @@ const Cart = (props) => {
         <table>
           <thead>
             <tr>
-              <th>Item</th>
-              <th>Qty</th>
-              <th>Price</th>
+              <th className='headItem'>Item</th>
+              <th className='headItem'>Qty</th>
+              <th className='headItem'>Price</th>
             </tr>
           </thead>
           <tbody>
@@ -26,6 +26,11 @@ const Cart = (props) => {
                 />
               );
             })}
+            <tr>
+              <td className='total'>TOTAL</td>
+              <td></td>
+              <td className='total'>${total}</td>
+            </tr>
           </tbody>
         </table>
       ) : (

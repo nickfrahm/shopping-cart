@@ -95,3 +95,31 @@
     align-items: center;
     width: 65%;
 }
+
+.Cart {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border: 1px solid black;
+}
+
+.headItem {
+    border-bottom: 3px solid black;
+}
+
+.cartItem {
+    text-align: center;
+}
+
+.total {
+    text-align: center;
+    font-weight: 900;
+    border-top: 1px solid black;
+}

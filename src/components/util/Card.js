@@ -7,7 +7,7 @@ const Card = (props) => {
       <img className='CardImg' src={src} alt={`${name}`} />
       <div className='itemDetails'>
         <h2>{name}</h2>
-        <p>{price}</p>
+        <p>${price}</p>
         <p>Quantity: {' ' + qty}</p>{' '}
         <div className='cartButtons'>
           <Button
