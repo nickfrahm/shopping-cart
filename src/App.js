@@ -1,5 +1,5 @@
 import './app.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/util/Nav';
 import Home from './components/Home';
 import Cart from './components/Cart';
@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className='App'>
-      <BrowserRouter basename='/'>
+      <HashRouter basename='/'>
         <Nav />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -75,7 +75,7 @@ function App() {
           />
           <Route path='/Cart' element={<Cart cart={cart} total={total} />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
